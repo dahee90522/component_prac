@@ -4,7 +4,7 @@
   border-radius: 8px;
   padding: 0 4px;
   background-color: grey;
-  color: white;
+  color: $white;
   align-items: center;
   justify-content: center;
   display: inline-flex;
@@ -21,7 +21,7 @@
     color: grey;
   }
   &-disabled {
-    background-color: $disable;
+    background-color: $neutralDark-300;
     color: $greyscale0;
   }
   &-isFull {
