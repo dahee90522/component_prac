@@ -1,0 +1,436 @@
+@import './_responsive.scss';
+
+$font-family: 'Tasa Orbiter Display', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI,
+  Roboto, Helvetica Neue, sans-serif;
+$font-family-tesa: 'Tasa Orbiter Display';
+$font-family-inter: 'inter';
+$font-family-menlo: 'menlo';
+
+$greyscale10: #000;
+$greyscale9: #191919;
+$greyscale7: #4e4e4e;
+$greyscale6: #bababa;
+$greyscale4: #d8d8d8;
+$disable: #d8d8d8;
+$greyscale3: #eeeeee;
+$greyscale2: #f0f0f0;
+$greyscale0: #fff;
+
+$black: #000;
+$white: #fff;
+
+$azure-050: #f5f8ff;
+$azure-a050: #305eff17;
+$azure-100: #d8e4fd;
+$azure-a100: #305eff2e;
+$azure-a150: #305eff3d;
+$azure-200: #b4cdfd;
+$azure-a200: #305eff52;
+$azure-300: #75a3ff;
+$azure-400: #4d7fff;
+$azure-500: #305eff;
+$azure-600: #2950da;
+$azure-700: #2243b6;
+$azure-800: #1b3591;
+$azure-900: #14286d;
+$azure-1000: #0d1a48;
+
+$emerald-050: #ebfaf3;
+$emerald-a050: #00a25117;
+$emerald-100: #daf5e8;
+$emerald-a100: #00a2512e;
+$emerald-a150: #00a2513d;
+$emerald-200: #b6ecd1;
+$emerald-a200: #00a25152;
+$emerald-300: #91e3ba;
+$emerald-400: #48d08c;
+$emerald-500: #00be5f;
+$emerald-600: #00a251;
+$emerald-700: #008743;
+$emerald-800: #006c36;
+$emerald-900: #005128;
+$emerald-1000: #00361b;
+
+$crimson-050: #fff5f5;
+$crimson-a050: #d92d2017;
+$crimson-100: #fee4e2;
+$crimson-a100: #d92d202e;
+$crimson-a150: #d92d203d;
+$crimson-200: #fec6c3;
+$crimson-a200: #d92d2052;
+$crimson-300: #fd9d96;
+$crimson-400: #f96c62;
+$crimson-500: #f04438;
+$crimson-600: #d92d20;
+$crimson-700: #b42318;
+$crimson-800: #9a0e0e;
+$crimson-900: #880c0c;
+$crimson-1000: #750a0a;
+
+$cider-050: #fff3eb;
+$cider-a050: #e9690c17;
+$cider-100: #fff3eb;
+$cider-a100: #e9690c2e;
+$cider-a150: #e9690c3d;
+$cider-200: #ffc499;
+$cider-a200: #e9690c52;
+$cider-300: #ffac70;
+$cider-400: #ff9040;
+$cider-500: #ff7a1a;
+$cider-600: #e9690c;
+$cider-700: #c65c10;
+$cider-800: #a24d10;
+$cider-900: #813e0e;
+$cider-1000: #5d2c09;
+
+$sapphire-050: #e7f6fe;
+$sapphire-a050: #1291d017;
+$sapphire-100: #cfedfc;
+$sapphire-a100: #1291d02e;
+$sapphire-a150: #1291d03d;
+$sapphire-200: #a8dffa;
+$sapphire-a200: #1291d052;
+$sapphire-300: #79cef8;
+$sapphire-400: #57c1f6;
+$sapphire-500: #15b0f3;
+$sapphire-600: #1291d0;
+$sapphire-700: #0f78ad;
+$sapphire-800: #0c608a;
+$sapphire-900: #094868;
+$sapphire-1000: #063145;
+
+$cloud-050: #edf4f7;
+$cloud-a050: #1f5c7a17;
+$cloud-100: #e6eff4;
+$cloud-a100: #1f5c7a2e;
+$cloud-a150: #1f5c7a3d;
+$cloud-200: #cbdde6;
+$cloud-a200: #1f5c7a52;
+$cloud-300: #97bbcd;
+$cloud-400: #6091a9;
+$cloud-500: #387594;
+$cloud-600: #1f5c7a;
+$cloud-700: #1d4b63;
+$cloud-800: #143d52;
+$cloud-900: #032a3e;
+$cloud-1000: #021c29;
+
+$sea-050: #edf7f7;
+$sea-a050: #1f7a7a17;
+$sea-100: #e2f3f3;
+$sea-a100: #1f7a7a2e;
+$sea-a150: #1f7a7a3d;
+$sea-200: #c2e0e0;
+$sea-a200: #1f7a7a52;
+$sea-300: #97cdcd;
+$sea-400: #60a9a9;
+$sea-500: #389494;
+$sea-600: #1f7a7a;
+$sea-700: #1d6363;
+$sea-800: #145252;
+$sea-900: #033e3e;
+$sea-1000: #022929;
+
+$neutralLight-000: #ffffff;
+$neutralLight-a025: #6c849d17;
+$neutralLight-050: #f8fafc;
+$neutralLight-a050: #6c849d17;
+$neutralLight-100: #f1f5fa;
+$neutralLight-a100: #6c849d2e;
+$neutralLight-200: #e3eaf3;
+$neutralLight-a200: #6c849d52;
+$neutralLight-300: #cbd5e2;
+$neutralLight-400: #b1c1d2;
+$neutralLight-500: #90a5bb;
+$neutralLight-600: #768ea7;
+$neutralLight-700: #6c849d;
+$neutralLight-800: #58728d;
+$neutralLight-900: #40566d;
+$neutralLight-1000: #2f4256;
+$neutralLight-1100: #243547;
+$neutralLight-1200: #192839;
+$neutralLight-1300: #0c1927;
+
+$neutralDark-000: #fcfcfd;
+$neutralDark-a025: #e3eaf317;
+$neutralDark-050: #e7e9ee;
+$neutralDark-a050: #e3eaf317;
+$neutralDark-100: #d0d4dd;
+$neutralDark-a100: #e3eaf32e;
+$neutralDark-200: #b8c0cc;
+$neutralDark-a200: #e3eaf352;
+$neutralDark-300: #8a98ad;
+$neutralDark-400: #5a6b87;
+$neutralDark-500: #485770;
+$neutralDark-600: #3a495f;
+$neutralDark-700: #2d3a4d;
+$neutralDark-800: #273244;
+$neutralDark-900: #232e3e;
+$neutralDark-1000: #1d2635;
+$neutralDark-1100: #171f2b;
+$neutralDark-1200: #111822;
+$neutralDark-1300: #0a111a;
+
+//font-size
+$global-fz-00: 0px;
+$global-fz-10: 10px;
+$global-fz-11: 11px;
+$global-fz-12: 12px;
+$global-fz-14: 14px;
+$global-fz-16: 16px;
+$global-fz-18: 18px;
+$global-fz-20: 20px;
+$global-fz-24: 24px;
+$global-fz-32: 32px;
+$global-fz-34: 34px;
+$global-fz-36: 36px;
+$global-fz-38: 38px;
+$global-fz-40: 40px;
+$global-fz-48: 48px;
+$global-fz-56: 56px;
+$global-fz-64: 64px;
+$global-fz-72: 72px;
+
+$font-size-25: $global-fz-10;
+$font-size-50: $global-fz-11;
+$font-size-75: $global-fz-12;
+$font-size-100: $global-fz-14;
+$font-size-200: $global-fz-16;
+$font-size-300: $global-fz-18;
+$font-size-400: $global-fz-20;
+$font-size-500: $global-fz-24;
+$font-size-600: $global-fz-32;
+$font-size-700: $global-fz-40;
+$font-size-800: $global-fz-48;
+$font-size-900: $global-fz-56;
+$font-size-1000: $global-fz-64;
+$font-size-1100: $global-fz-72;
+@include mobile {
+  $font-size-25: $global-fz-10;
+  $font-size-50: $global-fz-11;
+  $font-size-75: $global-fz-12;
+  $font-size-100: $global-fz-14;
+  $font-size-200: $global-fz-16;
+  $font-size-300: $global-fz-16;
+  $font-size-400: $global-fz-18;
+  $font-size-500: $global-fz-20;
+  $font-size-600: $global-fz-24;
+  $font-size-700: $global-fz-32;
+  $font-size-800: $global-fz-34;
+  $font-size-900: $global-fz-36;
+  $font-size-1000: $global-fz-38;
+  $font-size-1100: $global-fz-40;
+}
+
+//line-height
+$global-lh-00: 0px;
+$global-lh-14: 14px;
+$global-lh-16: 16px;
+$global-lh-18: 18px;
+$global-lh-20: 20px;
+$global-lh-22: 22px;
+$global-lh-24: 24px;
+$global-lh-26: 26px;
+$global-lh-32: 32px;
+$global-lh-38: 38px;
+$global-lh-40: 40px;
+$global-lh-42: 42px;
+$global-lh-46: 46px;
+$global-lh-48: 48px;
+$global-lh-56: 56px;
+$global-lh-64: 64px;
+$global-lh-70: 70px;
+$global-lh-78: 78px;
+
+$line-height-00: $global-lh-00;
+$line-height-25: $global-lh-14;
+$line-height-50: $global-lh-16;
+$line-height-75: $global-lh-18;
+$line-height-100: $global-lh-20;
+$line-height-200: $global-lh-24;
+$line-height-300: $global-lh-24;
+$line-height-400: $global-lh-26;
+$line-height-500: $global-lh-32;
+$line-height-600: $global-lh-38;
+$line-height-700: $global-lh-46;
+$line-height-800: $global-lh-56;
+$line-height-900: $global-lh-64;
+$line-height-1000: $global-lh-70;
+$line-height-1100: $global-lh-78;
+@include mobile {
+  $line-height-00: $global-lh-00;
+  $line-height-25: $global-lh-14;
+  $line-height-50: $global-lh-16;
+  $line-height-75: $global-lh-18;
+  $line-height-100: $global-lh-20;
+  $line-height-200: $global-lh-24;
+  $line-height-300: $global-lh-22;
+  $line-height-400: $global-lh-24;
+  $line-height-500: $global-lh-26;
+  $line-height-600: $global-lh-32;
+  $line-height-700: $global-lh-38;
+  $line-height-800: $global-lh-40;
+  $line-height-900: $global-lh-42;
+  $line-height-1000: $global-lh-46;
+  $line-height-1100: $global-lh-48;
+}
+
+//letter-spacing
+$global-ls-compressed: -2%;
+$global-ls-condensed: -1%;
+$global-ls-normal: 0%;
+$global-ls-expanded: 1%;
+$global-ls-extended: 2%;
+
+$letter-spacing-50: $global-ls-condensed;
+$letter-spacing-100: $global-ls-normal;
+@include mobile {
+  $letter-spacing-50: $global-ls-condensed;
+  $letter-spacing-100: $global-ls-normal;
+}
+
+//font-weight
+$global-fw-100: 100;
+$global-fw-200: 200;
+$global-fw-300: 300;
+$global-fw-400: 400;
+$global-fw-500: 500;
+$global-fw-600: 600;
+$global-fw-700: 700;
+$global-fw-800: 800;
+$global-fw-900: 900;
+
+$font-weight-400: $global-fw-400;
+$font-weight-500: $global-fw-500;
+$font-weight-600: $global-fw-600;
+$font-weight-700: $global-fw-700;
+@include mobile {
+  $font-weight-400: $global-fw-400;
+  $font-weight-500: $global-fw-500;
+  $font-weight-600: $global-fw-600;
+  $font-weight-700: $global-fw-700;
+}
+
+//paragraph-spacing
+$global-ps-00: 0px;
+$global-ps-08: 8px;
+$global-ps-10: 10px;
+$global-ps-11: 11px;
+$global-ps-12: 12px;
+
+$paragraph-spacing-00: $global-ps-00;
+$paragraph-spacing-100: $global-ps-08;
+$paragraph-spacing-200: $global-ps-10;
+$paragraph-spacing-300: $global-ps-11;
+$paragraph-spacing-400: $global-ps-12;
+@include mobile {
+  $paragraph-spacing-00: $global-ps-00;
+  $paragraph-spacing-100: $global-ps-08;
+  $paragraph-spacing-200: $global-ps-10;
+  $paragraph-spacing-300: $global-ps-11;
+  $paragraph-spacing-400: $global-ps-12;
+}
+
+//list-spacing
+$global-lis-00: 0px;
+$global-lis-04: 4px;
+$global-lis-08: 8px;
+$global-lis-12: 12px;
+$global-lis-16: 16px;
+$global-lis-20: 20px;
+$global-lis-24: 24px;
+
+$list-spacing-00: $global-lis-00;
+$list-spacing-100: $global-lis-08;
+@include mobile {
+  $list-spacing-00: $global-lis-00;
+  $list-spacing-100: $global-lis-08;
+}
+
+$main: #000;
+
+$borderWidth: (
+  none: '0px',
+  thinner: '0.5px',
+  thin: '1px',
+  thick: '1.5px',
+  thicker: '2px',
+);
+
+$borderRadius: (
+  none: '0px',
+  xsmall: '1px',
+  small: '2px',
+  medium: '4px',
+  large: '8px',
+  xlarge: '12px',
+  2xlarge: '16px',
+  max: '50%',
+);
+
+$elevation: (
+  lowRaised: '0px 2px 16px 0px rgba(25, 40, 57, 0.09)',
+  midRaised: '0px 8px 24px 0px rgba(25, 40, 57, 0.12)',
+  highRaised: '0px 16px 48px -4px rgba(25, 40, 57, 0.18)',
+);
+
+$opacity: (
+  00: '0%',
+  01: '9%',
+  02: '12%',
+  03: '18%',
+  04: '24%',
+  05: '32%',
+  06: '48%',
+  07: '56%',
+  08: '64%',
+  09: '72%',
+  10: '80%',
+  11: '88%',
+  12: '100%',
+);
+
+$spacing: (
+  00: '0px',
+  01: '2px',
+  02: '4px',
+  03: '8px',
+  04: '12px',
+  05: '16px',
+  06: '20px',
+  07: '24px',
+  08: '32px',
+  09: '40px',
+  10: '48px',
+  11: '46px',
+);
+
+$motion: (
+  duration: (
+    2xquick: '70ms',
+    xquick: '150ms',
+    quick: '200ms',
+    moderate: '250ms',
+    xmoderate: '300ms',
+    gentle: '400ms',
+    xgentle: '600ms',
+    2xgentle: '900ms',
+  ),
+  easing: (
+    entrnace: (
+      effective: 'cubic-bezier (0, 0, 0.2, 1)',
+      revealing: 'cubic-bezier(0, 0, 0, 1)',
+      attentive: 'cubic-bezier(0.5, 0, 0.3, 1.5)',
+    ),
+    standrd: (
+      effective: 'cubic-bezier(0.3, 0, 0.2, 1)',
+      revealing: 'cubic-bezier(0.5, 0, 0, 1)',
+      attentive: 'cubic-bezier(0.7, 0, 0.5, 1)',
+    ),
+    exit: (
+      effective: 'cubic-bezier(0.17, 0, 1, 1)',
+      revealing: 'cubic-bezier(0.5, 0, 1, 1)',
+      attentive: 'cubic-bezier(1, 0.5, 0, 0.5)',
+    ),
+  ),
+);

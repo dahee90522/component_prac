@@ -1,0 +1,281 @@
+@import './_variables.scss';
+
+@mixin DisplayXLarge {
+  font-size: $font-size-1100;
+  font-family: $font-family-tesa;
+  line-height: $line-height-1100;
+  letter-spacing: $letter-spacing-50;
+}
+@mixin DisplayXLarge-400 {
+  @include DisplayXLarge;
+  font-weight: $font-weight-400;
+}
+@mixin DisplayXLarge-500 {
+  @include DisplayXLarge;
+  font-weight: $font-weight-500;
+}
+@mixin DisplayXLarge-600 {
+  @include DisplayXLarge;
+  font-weight: $font-weight-600;
+  letter-spacing: $letter-spacing-100;
+}
+
+@mixin DisplayLarge {
+  font-size: $font-size-1100;
+  font-family: $font-family-tesa;
+  line-height: $line-height-1100;
+  letter-spacing: $letter-spacing-50;
+}
+@mixin DisplayLarge-400 {
+  @include DisplayLarge;
+  font-weight: $font-weight-400;
+}
+@mixin DisplayLarge-500 {
+  @include DisplayLarge;
+  font-weight: $font-weight-500;
+}
+@mixin DisplayLarge-600 {
+  @include DisplayLarge;
+  font-weight: $font-weight-600;
+  letter-spacing: $letter-spacing-100;
+}
+
+@mixin DisplayMedium {
+  font-size: $font-size-900;
+  font-family: $font-family-tesa;
+  line-height: $line-height-900;
+  letter-spacing: $letter-spacing-50;
+}
+@mixin DisplayMedium-400 {
+  @include DisplayMedium;
+  font-weight: $font-weight-400;
+}
+@mixin DisplayMedium-500 {
+  @include DisplayMedium;
+  font-weight: $font-weight-500;
+}
+@mixin DisplayMedium-600 {
+  @include DisplayMedium;
+  font-weight: $font-weight-600;
+  letter-spacing: $letter-spacing-100;
+}
+
+@mixin DisplaySmall {
+  font-size: $font-size-800;
+  font-family: $font-family-tesa;
+  line-height: $line-height-800;
+  letter-spacing: $letter-spacing-50;
+}
+@mixin DisplaySmall-400 {
+  @include DisplaySmall;
+  font-weight: $font-weight-400;
+}
+@mixin DisplaySmall-500 {
+  @include DisplaySmall;
+  font-weight: $font-weight-500;
+}
+@mixin DisplaySmall-600 {
+  @include DisplaySmall;
+  font-weight: $font-weight-600;
+  letter-spacing: $letter-spacing-100;
+}
+
+@mixin Heading2XLarge {
+  font-size: $font-size-700;
+  font-family: $font-family-tesa;
+  line-height: $line-height-700;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin Heading2XLarge-400 {
+  @include Heading2XLarge;
+  font-weight: $font-weight-400;
+}
+@mixin Heading2XLarge-600 {
+  @include Heading2XLarge;
+  font-weight: $font-weight-600;
+}
+
+@mixin HeadingXLarge {
+  font-size: $font-size-600;
+  font-family: $font-family-tesa;
+  line-height: $line-height-600;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin HeadingXLarge-400 {
+  @include HeadingXLarge;
+  font-weight: $font-weight-400;
+}
+@mixin HeadingXLarge-600 {
+  @include HeadingXLarge;
+  font-weight: $font-weight-600;
+}
+
+@mixin HeadingLarge {
+  font-size: $font-size-500;
+  font-family: $font-family-tesa;
+  line-height: $line-height-500;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin HeadingLarge-400 {
+  @include HeadingLarge;
+  font-weight: $font-weight-400;
+}
+@mixin HeadingLarge-600 {
+  @include HeadingLarge;
+  font-weight: $font-weight-600;
+}
+
+@mixin HeadingMedium {
+  font-size: $font-size-400;
+  font-family: $font-family-tesa;
+  line-height: $line-height-400;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin HeadingMedium-400 {
+  @include HeadingMedium;
+  font-weight: $font-weight-400;
+}
+@mixin HeadingMedium-600 {
+  @include HeadingMedium;
+  font-weight: $font-weight-600;
+}
+
+@mixin HeadingSmall {
+  font-size: $font-size-300;
+  font-family: $font-family-tesa;
+  line-height: $line-height-300;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin HeadingSmall-400 {
+  @include HeadingSmall;
+  font-weight: $font-weight-400;
+}
+@mixin HeadingSmall-600 {
+  @include HeadingSmall;
+  font-weight: $font-weight-600;
+}
+
+@mixin BodyLarge {
+  font-size: $font-size-200;
+  font-family: $font-family-inter;
+  line-height: $line-height-200;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin BodyLarge-400 {
+  @include BodyLarge;
+  font-weight: $font-weight-400;
+}
+@mixin BodyLarge-500 {
+  @include BodyLarge;
+  font-weight: $font-weight-500;
+}
+@mixin BodyLarge-600 {
+  @include BodyLarge;
+  font-weight: $font-weight-600;
+}
+
+@mixin BodyMedium {
+  font-size: $font-size-100;
+  font-family: $font-family-inter;
+  line-height: $line-height-100;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin BodyMedium-400 {
+  @include BodyMedium;
+  font-weight: $font-weight-400;
+}
+@mixin BodyMedium-500 {
+  @include BodyMedium;
+  font-weight: $font-weight-500;
+}
+@mixin BodyMedium-600 {
+  @include BodyMedium;
+  font-weight: $font-weight-600;
+}
+
+@mixin BodySmall {
+  font-size: $font-size-50;
+  font-family: $font-family-inter;
+  line-height: $line-height-75;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin BodySmall-400 {
+  @include BodySmall;
+  font-weight: $font-weight-400;
+}
+@mixin BodySmall-500 {
+  @include BodySmall;
+  font-weight: $font-weight-500;
+}
+@mixin BodySmall-600 {
+  @include BodySmall;
+  font-weight: $font-weight-600;
+}
+
+@mixin BodyXSmall {
+  font-size: $font-size-10;
+  font-family: $font-family-inter;
+  line-height: $line-height-25;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin BodyXSmall-400 {
+  @include BodyXSmall;
+  font-weight: $font-weight-400;
+}
+@mixin BodyXSmall-500 {
+  @include BodyXSmall;
+  font-weight: $font-weight-500;
+}
+@mixin BodyXSmall-600 {
+  @include BodyXSmall;
+  font-weight: $font-weight-600;
+}
+
+@mixin CaptionMedium {
+  font-size: $font-size-25;
+  font-family: $font-family-inter;
+  line-height: $line-height-50;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin CaptionMedium-600 {
+  @include CaptionMedium;
+  font-weight: $font-weight-600;
+}
+
+@mixin CodeBg {
+  padding: 0 4px;
+  background-color: $neutralLight-a050;
+  color: $neutralLight-900;
+  border-radius: 4px;
+}
+@mixin CodeMedium {
+  @include CodeBg;
+  font-size: $font-size-50;
+  font-family: $font-family-menlo;
+  line-height: $line-height-75;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin CodeMedium-400 {
+  @include CodeMedium;
+  font-weight: $font-weight-400;
+}
+@mixin CodeMedium-700 {
+  @include CodeMedium;
+  font-weight: $font-weight-700;
+}
+
+@mixin CodeSmall {
+  @include CodeBg;
+  font-size: $font-size-10;
+  font-family: $font-family-menlo;
+  line-height: $line-height-25;
+  letter-spacing: $letter-spacing-100;
+}
+@mixin CodeSmall-400 {
+  @include CodeSmall;
+  font-weight: $font-weight-400;
+}
+@mixin CodeSmall-700 {
+  @include CodeSmall;
+  font-weight: $font-weight-700;
+}
