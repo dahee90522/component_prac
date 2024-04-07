@@ -1,6 +1,7 @@
 import * as A from '@components/atoms';
 
 import React from 'react';
+import SideBar from '@common/components/organisms/Sidebar';
 import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 import { useNavigate } from 'react-router-dom';
@@ -10,6 +11,7 @@ function Main() {
   const navigate = useNavigate();
   return (
     <div className={cx('main-container')}>
+      <SideBar />
       <button>메인 페이지입니다.</button>
     </div>
   );

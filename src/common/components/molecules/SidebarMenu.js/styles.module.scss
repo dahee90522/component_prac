@@ -1,0 +1,16 @@
+@import '@styles/_variables.scss';
+@import '@styles/textFormat.scss';
+.button-container {
+  cursor: pointer;
+  padding-left: 32px;
+  height: 40px;
+  color: $white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @include BodyMedium-400;
+  &:hover {
+    background-color: #ffffff2e;
+  }
+}
