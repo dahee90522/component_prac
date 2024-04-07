@@ -196,7 +196,8 @@ img {
 }
 
 svg:not(:root) {
-  overflow: hidden;
+  overflow: visible;
+  display: block;
 }
 
 table {
